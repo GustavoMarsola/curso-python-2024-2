@@ -1,0 +1,38 @@
+o contexto do operador % para formatação de strings em Python, há vários especificadores de formato que podem ser usados. Aqui estão alguns dos mais comuns:
+
+%s - String:
+
+Substitui por uma representação de string.
+%d - Inteiro:
+
+Substitui por uma representação de número inteiro.
+%f - Ponto Flutuante:
+
+Substitui por uma representação de número de ponto flutuante.
+%x - Hexadecimal (minúsculo):
+
+Substitui por uma representação hexadecimal em minúsculas.
+%X - Hexadecimal (maiúsculo):
+
+Substitui por uma representação hexadecimal em maiúsculas.
+%o - Octal:
+
+Substitui por uma representação octal.
+%r - Representação de Repr:
+
+Substitui por uma representação repr() do objeto.
+%c - Caractere:
+
+Substitui por um caractere correspondente ao código ASCII.
+%e - Notação Científica (minúsculo):
+
+Substitui por uma representação em notação científica em minúsculas.
+%E - Notação Científica (maiúsculo):
+
+Substitui por uma representação em notação científica em maiúsculas.
+%g - Formato Geral:
+
+Escolhe automaticamente %f ou %e/%E com base na magnitude do número.
+%% - Símbolo de Porcentagem Literal:
+
+Representa o caractere de porcentagem literal.
