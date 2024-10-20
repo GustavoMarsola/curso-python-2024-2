@@ -13,11 +13,11 @@
 
 # Dados preenchidos pelo cliente
 
-nome = "Joao da silva souza"
-idade = '27'
+nome = 'Joao da silva souza'
+cpf = '123456789-00'
 incluso_cafe_da_manha = 0
 
 # Dados do banco de dados
 nome_db = 'JOAO DA SILVA SOUZA'
-idade_db = 27
+cpf_db = 12345678900
 incluso_cafe_da_manha_db = False
