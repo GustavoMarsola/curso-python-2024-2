@@ -4,8 +4,8 @@
 
 # Requisitos:
 
-# O aluno deve perguntar ao usuário quantos dias ele ficará (número).
-# Valor da diária é de R$ 127,00 (número) .
+# O aluno deve perguntar ao usuário quantos dias ele ficará hospedado.
+# Valor da diária é de R$ 127,00 .
 
 
 

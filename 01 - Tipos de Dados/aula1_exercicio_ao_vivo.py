@@ -1,6 +1,6 @@
 # Entrada de dados
 nome = input("Digite seu nome: ")
-idade = input("Digite sua idade (ou pressione Enter para deixar em branco): ")
+idade = input("Digite sua idade: ")
 qtd_hospedes = input("Digite a quantidade de hospedes: ")
 
 # Saída de dados
