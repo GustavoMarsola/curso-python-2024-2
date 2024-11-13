@@ -4,6 +4,7 @@
 
 # Requisitos:
 
+<<<<<<< HEAD
 usuario = 'Lucas Oliveira'
 cantidad_diaria = int('3')
 custo_diaria = 'R$ 127,00'
@@ -19,6 +20,10 @@ print('custo de la estadia estadia: R$', custo_estadia)
 
 # O aluno deve perguntar ao usuário quantos dias ele ficará (número).
 # Valor da diária é de R$ 127,00 (número) .
+=======
+# O aluno deve perguntar ao usuário quantos dias ele ficará hospedado.
+# Valor da diária é de R$ 127,00 .
+>>>>>>> dcd3e6159263b0f0f30e6268327e2c99854c06d9
 
 
 
