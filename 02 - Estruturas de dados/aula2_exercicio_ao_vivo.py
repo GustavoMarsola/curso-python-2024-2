@@ -53,5 +53,9 @@ lucros_cliente = [x.get('dias_hospedagem') * DIARIA_LIQUIDA for x in hospedagens
 lucro_total = sum(lucros_clientes)
 print('O lucro semanal do seu hotel foi de R$', lucro_total)
 
+# Exercícios extra
+
+# Determine qual foi o cliente que menos gerou lucro
+
 
 
