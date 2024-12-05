@@ -1,0 +1,122 @@
+O Python tem uma variedade de exceções que são levantadas automaticamente quando algo errado acontece durante a execução de um programa. Abaixo está uma lista das exceções mais comuns em Python, com uma breve descrição de cada uma:
+
+### **Exceções Internas Comuns**
+
+1. **`Exception`**  
+   - A classe base para todas as exceções. Quase todas as exceções em Python herdam dessa classe.
+
+2. **`ArithmeticError`**  
+   - A classe base para erros numéricos, como divisão por zero ou resultados fora do alcance de números.
+
+3. **`ZeroDivisionError`**  
+   - Levantada quando há uma tentativa de divisão por zero.
+
+4. **`OverflowError`**  
+   - Levantada quando o resultado de uma operação matemática ultrapassa o limite que pode ser representado.
+
+5. **`FloatingPointError`**  
+   - Levantada em operações com números de ponto flutuante, quando ocorre um erro matemático.
+
+6. **`IndexError`**  
+   - Levantada quando se tenta acessar um índice inválido em uma lista ou sequência (ex: índice fora do intervalo).
+
+7. **`KeyError`**  
+   - Levantada quando se tenta acessar uma chave inexistente em um dicionário.
+
+8. **`TypeError`**  
+   - Levantada quando se tenta realizar uma operação com tipos de dados incompatíveis (ex: somar uma string com um número).
+
+9. **`ValueError`**  
+   - Levantada quando uma função recebe um argumento com o tipo correto, mas com um valor inadequado.
+
+10. **`AttributeError`**  
+    - Levantada quando se tenta acessar um atributo de um objeto que não existe.
+
+11. **`NameError`**  
+    - Levantada quando se tenta acessar uma variável que não foi definida.
+
+12. **`FileNotFoundError`**  
+    - Levantada quando o Python não consegue encontrar um arquivo especificado.
+
+13. **`PermissionError`**  
+    - Levantada quando um arquivo não pode ser acessado devido a permissões insuficientes.
+
+14. **`OSError`**  
+    - Levantada quando uma operação de sistema falha (geralmente relacionada ao sistema operacional).
+
+15. **`ImportError`**  
+    - Levantada quando uma importação falha (não consegue encontrar o módulo ou o objeto dentro do módulo).
+
+16. **`ModuleNotFoundError`**  
+    - Subclasse de `ImportError`, levantada quando um módulo não pode ser encontrado.
+
+17. **`StopIteration`**  
+    - Levantada quando a função `next()` é chamada em um iterador e ele não tem mais valores.
+
+18. **`AssertionError`**  
+    - Levantada quando uma asserção (`assert`) falha.
+
+19. **`MemoryError`**  
+    - Levantada quando o programa esgota a memória disponível.
+
+20. **`KeyboardInterrupt`**  
+    - Levantada quando o usuário interrompe a execução do programa com Ctrl+C.
+
+21. **`RecursionError`**  
+    - Levantada quando a recursão excede a profundidade máxima permitida.
+
+22. **`NotImplementedError`**  
+    - Levantada quando uma função ou método abstrato não é implementado.
+
+23. **`RuntimeError`**  
+    - Levantada em casos gerais de erro em tempo de execução.
+
+24. **`TimeoutError`**  
+    - Levantada quando uma operação demora mais do que o esperado (geralmente em operações de rede ou I/O).
+
+25. **`UnicodeDecodeError`**  
+    - Levantada quando uma string de bytes não pode ser decodificada para Unicode.
+
+26. **`UnicodeEncodeError`**  
+    - Levantada quando uma string não pode ser codificada como bytes.
+
+### **Exceções Relacionadas a Iteradores**
+
+27. **`IndexError`**  
+    - Levantada quando um índice de sequência (como uma lista ou tupla) é acessado fora do seu intervalo válido.
+
+28. **`StopIteration`**  
+    - Levantada quando o iterador chega ao fim e não há mais elementos a serem retornados.
+
+### **Exceções Relacionadas a Processamento de Entrada e Saída (I/O)**
+
+29. **`EOFError`**  
+    - Levantada quando uma função `input()` ou `raw_input()` encontra o final do arquivo (EOF) sem ter recebido dados.
+
+30. **`IOError`**  
+    - Levantada em operações de entrada e saída (I/O) falhas, como problemas ao ler ou gravar em arquivos (em versões mais antigas do Python, `IOError` e `OSError` eram usadas de forma intercambiável).
+
+### **Exceções Personalizadas**
+
+Além das exceções internas, você também pode criar suas próprias exceções. Para isso, você cria uma nova classe que herda da classe `Exception`. Exemplo:
+
+```python
+class MinhaExcecao(Exception):
+    pass
+```
+
+Você pode então levantar essa exceção no código:
+
+```python
+raise MinhaExcecao("Ocorreu um erro personalizado!")
+```
+
+### **Exceções e Hierarquia**
+
+Essas exceções fazem parte de uma hierarquia mais ampla de exceções em Python. Por exemplo:
+
+- `Exception` é a classe base de muitas outras exceções.
+- `ArithmeticError` é a classe base para exceções como `ZeroDivisionError`, `OverflowError`, e `FloatingPointError`.
+- `LookupError` é a classe base para exceções como `IndexError` e `KeyError`.
+
+Esta hierarquia ajuda a entender como tratar diferentes tipos de exceções com blocos `except` mais gerais ou específicos.
