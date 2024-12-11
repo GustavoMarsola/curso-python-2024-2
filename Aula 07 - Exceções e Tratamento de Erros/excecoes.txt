@@ -18,7 +18,7 @@ O Python tem uma variedade de exceções que são levantadas automaticamente qua
    - Levantada em operações com números de ponto flutuante, quando ocorre um erro matemático.
 
 6. **`IndexError`**  
-   - Levantada quando se tenta acessar um índice inválido em uma lista ou sequência (ex: índice fora do intervalo).
+   - Levantada quando se tenta acessar um índice inválido em uma lista ou tupla (ex: índice fora do intervalo).
 
 7. **`KeyError`**  
    - Levantada quando se tenta acessar uma chave inexistente em um dicionário.
