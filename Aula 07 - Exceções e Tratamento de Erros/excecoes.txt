@@ -95,28 +95,3 @@ O Python tem uma variedade de exceções que são levantadas automaticamente qua
 
 30. **`IOError`**  
     - Levantada em operações de entrada e saída (I/O) falhas, como problemas ao ler ou gravar em arquivos (em versões mais antigas do Python, `IOError` e `OSError` eram usadas de forma intercambiável).
-
-### **Exceções Personalizadas**
-
-Além das exceções internas, você também pode criar suas próprias exceções. Para isso, você cria uma nova classe que herda da classe `Exception`. Exemplo:
-
-```python
-class MinhaExcecao(Exception):
-    pass
-```
-
-Você pode então levantar essa exceção no código:
-
-```python
-raise MinhaExcecao("Ocorreu um erro personalizado!")
-```
-
-### **Exceções e Hierarquia**
-
-Essas exceções fazem parte de uma hierarquia mais ampla de exceções em Python. Por exemplo:
-
-- `Exception` é a classe base de muitas outras exceções.
-- `ArithmeticError` é a classe base para exceções como `ZeroDivisionError`, `OverflowError`, e `FloatingPointError`.
-- `LookupError` é a classe base para exceções como `IndexError` e `KeyError`.
-
-Esta hierarquia ajuda a entender como tratar diferentes tipos de exceções com blocos `except` mais gerais ou específicos.
