@@ -59,8 +59,15 @@ class SistemaHotel:
         return self.hospedes
     
     # Remover um hospede
-    
 
+    for hospede in self.hospedes:
+            if hospede["nome"] == nome:
+                self.hospedes.remove(hospede)
+                print(f"Hóspede {nome} removido com sucesso.")
+                return self.hospedes
+        
+        print(f"Hóspede {nome} não encontrado.")
+        return self.hospedes
 
 if __name__ == '__main__':
     sistema = SistemaHotel(email='gustavo.marsola@gmail.com', senha='teste')
