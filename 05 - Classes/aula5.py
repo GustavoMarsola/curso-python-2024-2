@@ -59,6 +59,32 @@ class SistemaHotel:
         return self.hospedes
     
     # Remover um hospede
+<<<<<<< HEAD
+=======
+    def remover_hospede(self, quarto: int) -> bool:
+        if self.token is None:
+            print(f"Usuario {self.email} não está autenticado")
+            return False
+        
+        i = 0
+        while i < len(self.hospedes):
+            hospede = self.hospedes[i]
+            if hospede['quarto'] == quarto:
+                del self.hospedes[i]  # Remove o hóspede da lista
+                print(f"Hóspede no quarto {quarto} removido com sucesso.")
+                return True
+            i += 1
+        
+        # Procurar o hóspede no quarto especificado
+        # for i, hospede in enumerate(self.hospedes):
+        #     if hospede['quarto'] == quarto:
+        #         del self.hospedes[i]  # Remove o hóspede da lista
+        #         print(f"Hóspede no quarto {quarto} removido com sucesso.")
+        #         return True
+        
+        print(f"Nenhum hóspede encontrado no quarto {quarto}.")
+        return False
+>>>>>>> 3013e1680a4a51e664551e2996984a008eed617d
 
     for hospede in self.hospedes:
             if hospede["nome"] == nome:

@@ -1,0 +1,71 @@
+﻿{
+    "hotel": "Hotel Paraíso",
+    "localizacao": {
+        "endereco": "Avenida Central, 123",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "12345-678"
+    },
+    "hospedes": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@email.com",
+            "telefone": "(11) 91234-5678",
+            "data_checkin": "2024-12-01",
+            "data_checkout": "2024-12-07",
+            "tipo_quarto": "Standard",
+            "observacoes": "Necessita de cama extra"
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@email.com",
+            "telefone": "(11) 98765-4321",
+            "data_checkin": "2024-12-05",
+            "data_checkout": "2024-12-10",
+            "tipo_quarto": "Deluxe",
+            "observacoes": "Alergia a alguns produtos de limpeza"
+        },
+        {
+            "id": 3,
+            "nome": "Carlos Pereira",
+            "email": "carlos.pereira@email.com",
+            "telefone": "(21) 99876-5432",
+            "data_checkin": "2024-12-03",
+            "data_checkout": "2024-12-08",
+            "tipo_quarto": "Suíte",
+            "observacoes": "Preferência por andar alto"
+        },
+        {
+            "id": 4,
+            "nome": "Fernanda Costa",
+            "email": "fernanda.costa@email.com",
+            "telefone": "(21) 91123-4567",
+            "data_checkin": "2024-12-02",
+            "data_checkout": "2024-12-06",
+            "tipo_quarto": "Standard",
+            "observacoes": "Check-in tardio"
+        },
+        {
+            "id": 5,
+            "nome": "Lucas Souza",
+            "email": "lucas.souza@email.com",
+            "telefone": "(11) 99876-1234",
+            "data_checkin": "2024-12-10",
+            "data_checkout": "2024-12-15",
+            "tipo_quarto": "Premium",
+            "observacoes": "Pedido de cama king-size"
+        },
+        {
+            "id": 5,
+            "nome": "Lucas Souza",
+            "email": "lucas.souza@email.com",
+            "telefone": "(11) 99876-1234",
+            "data_checkin": "2024-12-10",
+            "data_checkout": "2024-12-15",
+            "tipo_quarto": "Premium",
+            "observacoes": "Pedido de cama king-size"
+        }
+    ]
+}

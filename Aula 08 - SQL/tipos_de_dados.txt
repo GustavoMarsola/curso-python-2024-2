@@ -1,0 +1,93 @@
+No PostgreSQL, os tipos de dados são divididos em categorias para atender a diferentes necessidades de armazenamento e manipulação de dados. Aqui está uma visão geral dos principais tipos de dados no PostgreSQL:
+
+---
+
+### **1. Tipos Numéricos**
+   - **Inteiros**:
+     - `SMALLINT`: Armazena números inteiros pequenos (16 bits).
+       - Intervalo: -32.768 a 32.767.
+     - `INTEGER` (ou `INT`): Armazena números inteiros padrão (32 bits).
+       - Intervalo: -2.147.483.648 a 2.147.483.647.
+     - `BIGINT`: Armazena números inteiros grandes (64 bits).
+       - Intervalo: -9.223.372.036.854.775.808 a 9.223.372.036.854.775.807.
+   - **Pontos Flutuantes**:
+     - `REAL`: Precisão simples (32 bits).
+     - `DOUBLE PRECISION`: Precisão dupla (64 bits).
+   - **Decimais e Precisão Fixa**:
+     - `NUMERIC` ou `DECIMAL`: Precisão arbitrária. Você pode definir a precisão e a escala (ex.: `NUMERIC(10, 2)` para 10 dígitos, sendo 2 após a vírgula).
+
+---
+
+### **2. Tipos de Caracteres**
+   - **Texto de tamanho fixo**:
+     - `CHAR(n)` ou `CHARACTER(n)`: Texto com tamanho fixo de `n` caracteres.
+   - **Texto de tamanho variável**:
+     - `VARCHAR(n)` ou `CHARACTER VARYING(n)`: Texto com limite de até `n` caracteres.
+   - **Texto ilimitado**:
+     - `TEXT`: Texto de comprimento ilimitado.
+
+---
+
+### **3. Tipos de Data e Hora**
+   - **Data**:
+     - `DATE`: Apenas data (ano, mês, dia).
+   - **Hora**:
+     - `TIME`: Apenas hora (horas, minutos, segundos).
+     - `TIME WITH TIME ZONE`: Hora com fuso horário.
+   - **Timestamp**:
+     - `TIMESTAMP`: Data e hora (sem fuso horário).
+     - `TIMESTAMP WITH TIME ZONE`: Data e hora com fuso horário.
+   - **Intervalo**:
+     - `INTERVAL`: Intervalos de tempo (ex.: `1 year`, `2 days 3 hours`).
+
+---
+
+### **4. Tipos Booleanos**
+   - `BOOLEAN`: Valores lógicos (`TRUE`, `FALSE`, `NULL`).
+
+---
+
+### **5. Tipos de Dados Monetários**
+   - `MONEY`: Representa valores monetários. Útil para cálculos financeiros.
+
+---
+
+### **6. Tipos de Dados Geométricos**
+   - `POINT`: Um ponto no plano `(x, y)`.
+   - `LINE`: Linha infinita.
+   - `LSEG`: Segmento de linha.
+   - `BOX`: Um retângulo.
+   - `CIRCLE`: Um círculo.
+   - `POLYGON`: Um polígono.
+
+---
+
+### **7. Tipos JSON e XML**
+   - **JSON**:
+     - `JSON`: Armazena dados no formato JSON sem validação de estrutura.
+     - `JSONB`: Armazena dados no formato JSON em formato binário, com melhor desempenho para consultas.
+   - **XML**:
+     - `XML`: Armazena dados no formato XML.
+
+---
+
+### **8. Tipos de Dados Binários**
+   - `BYTEA`: Dados binários (como arquivos ou imagens).
+
+---
+
+### **9. Tipos de Dados Especiais**
+   - **UUID**:
+     - `UUID`: Identificador universal único.
+   - **ARRAY**:
+     - Armazena arrays de qualquer tipo (ex.: `INTEGER[]`).
+   - **ENUM**:
+     - Enumerações personalizadas (ex.: `CREATE TYPE cor AS ENUM ('vermelho', 'verde', 'azul');`).
+   - **CIDR e INET**:
+     - Representam endereços de rede e IP.
+   - **TSVECTOR e TSVECTOR**:
+     - Tipos usados para pesquisa de texto completo.
+
+---
+
+Se você quiser, posso fornecer exemplos práticos de uso de qualquer um desses tipos!
